@@ -79,3 +79,19 @@ Return the ```five``` after works finished.
 You should use ```for..in``` in your code, otherwise, your solution may not pass this kata. Don't learn bad habits from those lazy guys ;-)
 ##Series:
 */
+
+//Solution
+function giveMeFive(obj){
+  
+  var res = [];
+  
+  for (var key in obj){
+   if( obj.hasOwnProperty(key)){
+   if(key.length === 5) res.push(key)
+   if(obj[key].length ===5)res.push(obj[key])
+   
+   }
+  
+  }
+  return res;
+}
